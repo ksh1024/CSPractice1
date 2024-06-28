@@ -118,6 +118,13 @@ namespace CSPractice1
             // #2  13-6. 삼항 연산자
             Console.WriteLine(number % 2 != 1 ? "짝수" : "홀수");
 
+            // #3 14-1. 반복문과 배열
+            int[] intArray = new int[100];
+            Console.WriteLine(intArray[99]);
+
+
+
+
 
 
         }
