@@ -115,7 +115,8 @@ namespace CSPractice1
                     break; // default에도 break를 써줘야함
             }
 
-
+            // #2  13-6. 삼항 연산자
+            Console.WriteLine(number % 2 != 1 ? "짝수" : "홀수");
 
 
 
