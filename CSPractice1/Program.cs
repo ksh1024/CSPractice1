@@ -77,8 +77,9 @@ namespace CSPractice1
             Console.WriteLine(number--); //12
             Console.WriteLine(--number); //10
 
-
-
+            // #1 12-7. var 키워드
+            var varnumber = 20;  // 컴파일 시점에 int가 됨
+            // var abc; // 에러 (선언과 동시에 반드시 초기화를 해야함)
 
 
 
