@@ -103,6 +103,17 @@ namespace CSPractice1
                 // other
             }
 
+            // #2 13-2. switch 조건문
+            int v = 0;
+            switch (v)
+            {
+                case 0:
+                    // 0
+                    break;
+                default:
+                    //other
+                    break; // default에도 break를 써줘야함
+            }
 
 
 
