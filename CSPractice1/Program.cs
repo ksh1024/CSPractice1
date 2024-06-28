@@ -81,8 +81,9 @@ namespace CSPractice1
             var varnumber = 20;  // 컴파일 시점에 int가 됨
             // var abc; // 에러 (선언과 동시에 반드시 초기화를 해야함)
 
-
-
+            // #1 12-9. 입력
+            string input = Console.ReadLine();
+            Console.WriteLine(input);
 
 
 
