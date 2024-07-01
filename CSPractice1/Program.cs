@@ -6,7 +6,21 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CSPractice1
-{
+{   
+    class MyMath
+    {
+        public static int classVar = 1;
+        public int instanceVar = 2;
+
+        public static int Abs(int input)
+        {
+            Console.WriteLine(classVar);
+            // 클래스 메서드에서 인스턴스 변수 접근 불가
+            // Console.WriteLine(instanceVar);
+            return ( input >= 0 ) ? input : -input;
+        }
+    }
+
      class FirstClass
     {
 
@@ -179,7 +193,8 @@ namespace CSPractice1
             Console.WriteLine(Product.TAX_RATIO);
             // Console.WriteLine(p1.TAX_RATIO); // java에서는 가능, C#은 x
     
-
+            // #5 21-3. 클래스 메서드
+            
 
         
         
