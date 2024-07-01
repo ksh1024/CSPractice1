@@ -6,7 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CSPractice1
-{   
+{    
+
+
      class Box
     {
         public int width { get; set; }
@@ -73,6 +75,15 @@ namespace CSPractice1
 
     internal class Program
     {
+        class Test
+        {
+            public int value = 10;
+        }
+        static void Change (Test t)
+        {
+            t.value = 20;
+        }
+
         class ThirdClass
         {
 
@@ -151,8 +162,8 @@ namespace CSPractice1
             // var abc; // 에러 (선언과 동시에 반드시 초기화를 해야함)
 
             // #1 12-9. 입력
-            string input = Console.ReadLine();
-            Console.WriteLine(input);
+            //string input = Console.ReadLine();
+            //Console.WriteLine(input);
 
             // #1 12-10. 자료형 변환
             // 굉장히 중요
@@ -269,7 +280,14 @@ namespace CSPractice1
             Box b = new Box();
             b.width = 100;
             b.Height = 100;
-            b.Height = -1; // 예외발생
+            // b.Height = -1; // 예외발생
+            
+            // #5 22-9. 값 복사와 참조복사
+            
+            Test test = new Test();
+            test.value = 100;
+            Change(test);
+            Console.WriteLine(test.value); // 20
 
         }
     }
