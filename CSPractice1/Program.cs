@@ -19,6 +19,11 @@ namespace CSPractice1
             // Console.WriteLine(instanceVar);
             return ( input >= 0 ) ? input : -input;
         }
+        // 메서드 시그네이쳐 (이름, 매개변수)가 겹쳐서 안 됨
+        //public static double Abs(int input) { return 0; }
+        
+        // 메서드 이름은 같지만, 매개변수의 타입이 달라서 가능
+        public static double Abs(double input) { return 0; }
     }
 
      class FirstClass
@@ -192,9 +197,15 @@ namespace CSPractice1
             // #4 21-5. 클래스 변수
             Console.WriteLine(Product.TAX_RATIO);
             // Console.WriteLine(p1.TAX_RATIO); // java에서는 가능, C#은 x
-    
+
             // #5 21-3. 클래스 메서드
-            
+
+            // #5 22-4. 메서드 오버로딩
+            Console.WriteLine(MyMath.Abs(-10)); // Abs(int input)
+            Console.WriteLine(MyMath.Abs(10.0)); // Abs(double input)
+            Console.WriteLine(MyMath.Abs(-10L)); // Abs(double input)
+            Console.WriteLine(MyMath.Abs(3.0f)); // Abs(double input)
+
 
         
         
